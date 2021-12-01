@@ -17,7 +17,7 @@ function division(a, b) {
 }
 
 function operate(operator, numOne, numTwo) {
-    div
+    
 }
 
 console.log(product(2, 2));
