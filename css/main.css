@@ -1,4 +1,13 @@
 /* calculator styling */
+@font-face {
+    font-family: "Digital";
+    src: url('/font/digital-7_mono-webfont.woff2') format('woff2'),
+         url('/font/digital-7_mono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* $calculatorSize: 420px; */
 
 * {
@@ -27,11 +36,15 @@ body {
 
 #display {
     background-color: rgb(59, 65, 54);
+    font-family: "Digital", sans-serif;
     margin: auto;
     width: 424px;
     height: 60px;
     margin-bottom: 16px;
     border-radius: 2px;
+    font-size: 48px;
+    align-items: baseline;
+    text-align: right;
 }
 
 button {
