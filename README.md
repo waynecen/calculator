@@ -15,8 +15,9 @@ This project was created to learn fundamentals of Javascript and improve problem
 ## Future Features
 Features to be implemented (possibly) if project were revisited
 - [ ] Responsive
-- [ ] Fix known bug - display not resetting after an operation when inputting new set of numbers
-- [ ] PEDMAS not operational
+- [ ] Display not inputting new set of numbers after an operation
+- [ ] PEDMAS not implemented
+- [ ] Display font not importing properly with git submodule
 
 ## Preview
 ![Preview of Calculator](https://github.com/waynecen/calculator/blob/main/calculator.png)
