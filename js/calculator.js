@@ -35,7 +35,7 @@ function storeValue() {
 storeValue();
 
 //listens for operator buttons
-function clickOperator() {
+function getOperator() {
 	for (let i = 0; i < operatorButton.length; i++) {
 		operatorButton[i].addEventListener("click", function () {
 			if (operatorButton[i].classList.contains("operator")) {
@@ -45,7 +45,7 @@ function clickOperator() {
 	}
 }
 
-clickOperator();
+getOperator();
 
 //update value of displayNum depending on button value, loops into storeValue
 function inputNumber(value) {
@@ -74,12 +74,11 @@ function storeOperator() {
 			}
 
 			if (firstSum != null) {
-				displayNum = "";
+				displayNum = "0";
 			}
 
 			if (firstOperator != null && firstOperator != firstOperator) {
 				secondOperator = operatorButton[i].value;
-				displayNum = "";
 			}
 		});
 	}
@@ -99,7 +98,8 @@ function equals() {
 		secondSum = null;
 		firstOperator = null;
 		secondOperator = null;
-		total = null;
+	} else if (firstOperator === null && secondOperator === null) {
+		displayNum = "0";
 	} else {
 		secondSum = displayNum;
 		total = operate(Number(firstSum), Number(secondSum), firstOperator);
@@ -110,11 +110,10 @@ function equals() {
 		secondSum = null;
 		firstOperator = null;
 		secondOperator = null;
-		total = null;
-		displayNum = "0";
 	}
 }
 
+//handles calculations
 function operate(a, b, operator) {
 	switch (operator) {
 		case "add":
@@ -126,18 +125,15 @@ function operate(a, b, operator) {
 		case "product":
 			return a * b;
 			break;
-		case "division":
-			if (b === 0) {
-				return "boom";
-			} else {
-				return a / b;
-				break;
-			}
+		case "divide":
+			return a / b;
+			break;
 	}
 }
 
+//reset all values to default
 function clearAll() {
-	displayNum = 0;
+	displayNum = "0";
 	firstSum = null;
 	secondSum = null;
 	firstOperator = null;
