@@ -1,4 +1,4 @@
-# Basic Calculator
+# Single Operation Calculator
 
 A calculator with the functions add, subtract, multiply, and divide.
 
@@ -10,17 +10,19 @@ This project was created to learn fundamentals of Javascript and improve problem
 ## What I Learned
 - Utilizing conditionals and functions in a problem solving scenario
 - Connecting JS functions to buttons in HTML
+- How to use debugger in dev tools to step through JS
 
 ## Future Features
 Features to be implemented (possibly) if project were revisited
 - [ ] Responsive
 - [ ] Fix known bug - display not resetting after an operation when inputting new set of numbers
+- [ ] PEDMAS not operational
 
 ## Preview
 ![Preview of Calculator](https://github.com/waynecen/calculator/blob/main/calculator.png)
 
 ### Challenges
-I really wanted to find the solution through fully functional programming by making the function loop into itself, but ended up having to manually call the functions in part 2, 8-10 times. I kept running into issues with infinite loops or getting errors due to variables not having the proper scope, it was a messy process of debugging repeatedly.
+The most difficult part of making this calculator was figuring out the logic of the equals button. I took each function step by step and did a lot of debugging using console.log to identify when I was storing the sum/operator variables. I couldn't figure out how to make PEDMAS operational, which will have to be something I revisit one day.
 
 ## Credits
 Created following the curriculum of [The Odin Project](https://www.theodinproject.com/paths/foundations/courses/foundations).
