@@ -1,76 +1,80 @@
 /* calculator styling */
 @font-face {
-    font-family: "Digital";
-    src: url('/font/digital-7_mono-webfont.woff2') format('woff2'),
-         url('/font/digital-7_mono-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+	font-family: "Digital";
+	src: url("/font/digital-7_mono-webfont.woff2") format("woff2"),
+		url("/font/digital-7_mono-webfont.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* $calculatorSize: 420px; */
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    background-color: rgb(29, 29, 29);
-    min-height: 100%;
-    color: #fafafa;
-
+html,
+body {
+	background-color: rgb(29, 29, 29);
+	min-height: 100%;
+	color: #fafafa;
 }
 
 body {
-    text-rendering: optimizeLegibility;
-    margin: 0;
+	text-rendering: optimizeLegibility;
+	margin: 0;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 60px;
 }
 
 #display {
-    background-color: rgb(59, 65, 54);
-    font-family: "Digital", sans-serif;
-    margin: auto;
-    width: 424px;
-    height: 60px;
-    margin-bottom: 16px;
-    border-radius: 2px;
-    font-size: 48px;
-    align-items: baseline;
-    text-align: right;
+	background-color: rgb(59, 65, 54);
+	font-family: "Digital", sans-serif;
+	margin: auto;
+	width: 424px;
+	height: 60px;
+	margin-bottom: 16px;
+	border-radius: 2px;
+	font-size: 48px;
+	align-items: baseline;
+	text-align: right;
+	padding-right: 8px;
 }
 
 button {
-    margin-right: 4px;
-    margin-left: 4px;
-    width: 100px;
-    height: 60px;
-    font-size: 16px;
-    border-radius: 2px;
-    border: none;
+	margin-right: 4px;
+	margin-left: 4px;
+	width: 100px;
+	height: 60px;
+	font-size: 16px;
+	border-radius: 2px;
+	border: none;
+}
+
+button:focus {
+	background-color: #b4b4b4;
 }
 
 .row {
-    display: flex;
-    margin-bottom: 8px;
+	display: flex;
+	margin-bottom: 8px;
 }
 
 .spacer {
-    width: 100px;
-    height: 60px;
-    margin-right: 4px;
-    margin-left: 4px;
-    background-color: rgb(29, 29, 29);
-    border: rgba(255, 255, 255, 0.212) 1px solid;
+	width: 100px;
+	height: 60px;
+	margin-right: 4px;
+	margin-left: 4px;
+	background-color: rgb(29, 29, 29);
+	border: rgba(255, 255, 255, 0.212) 1px solid;
 }
 
 .equals {
-    align-items: flex-end;
+	align-items: flex-end;
 }
