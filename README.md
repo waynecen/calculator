@@ -12,7 +12,7 @@ This project was created to learn fundamentals of Javascript and improve problem
 - Connecting JS functions to buttons in HTML
 - How to use debugger in dev tools to step through JS
 
-## Future Features
+## Things to Fix
 Features to be implemented (possibly) if project were revisited
 - [ ] Responsive
 - [ ] Display not inputting new set of numbers after an operation
